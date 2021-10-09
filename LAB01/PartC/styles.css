@@ -1,0 +1,19 @@
+div.leftcolumn{
+    width: 50%;
+    float: left;
+}
+div.rightcolumn{
+    width: 50%;
+    float: right;
+}
+p{
+    margin: 10px;
+}
+img.displayleft{
+    float: left;
+    clear: left;
+}
+img.displayright{
+    float: right;
+    clear: right;
+}
