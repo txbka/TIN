@@ -1,0 +1,11 @@
+body{
+    background-color:darkslateblue;
+}
+form{
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica;
+    font-size: 20px;
+    color:bisque;
+}
+.required{
+    color: red;
+}
