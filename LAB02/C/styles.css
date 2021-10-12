@@ -27,7 +27,7 @@ article p{
     text-align: justify;
     border:3px solid greenyellow;
     background-color: aqua;
-    width:90%;
+    margin-right:20px;
 }
 article a:hover{
     color:red;
