@@ -1,8 +1,8 @@
 const { Console } = require('console');
-var express = require('express');  
-var path = require("path");
-var app = express();  
-var bodyParser = require("body-parser");
+const express = require('express');  
+const path = require("path");
+const app = express();  
+const bodyParser = require("body-parser");
 app.use(bodyParser.json());
 app.use(express.urlencoded({extended: true,}));
 app.set('view engine', 'pug');
