@@ -1,14 +1,18 @@
 <html>
     <head/>
     <body>
-        <form method="POST" action="/formdata">
-            <label for="firstname" >First Name</label>
-            <input name="firstname" type="text" id="firstname" />
-            <label for="lastname">Last Name</label>
-            <input name="lastname" type="text" id="lastname" />
-            <label for="age">Age</label>
-            <input name="age" type="number" id="age" />
-            <button type="submit">Submit</button>
-        </form>
+        <div>
+            <label for="num1" >Number 1</label>
+            <input name="num1" type="number" id="num1" />
+            <label for="num2">Number 2</label>
+            <input name="num2" type="number" id="num2" />
+            <label for="op">Operation</label>
+            <input name="op" type="text" id="op" />
+            <button type="button" id="submit">Submit</button>
+        </div>
+        <div id = "results">
+            <p>Results: </p>
+        </div>
+        <script src="9b.js"></script>
     </body>
 </html>

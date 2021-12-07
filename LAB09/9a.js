@@ -1,12 +1,20 @@
 const { Console } = require('console');
 const express = require('express');  
-const app = express();  
+const app = express();
+const cors = require("cors");  
 const bodyParser = require("body-parser");
 app.use(bodyParser.json());
 app.use(express.urlencoded({extended: true,}));
+app.use(cors({origin: "*",}));
+  
 
 app.post("/calc", (req, res) =>
 {
+    let headers = {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*",
+    }
     let a = parseInt(req.body.a);
     let b = parseInt(req.body.b);
     let operator = req.body.op;
@@ -37,7 +45,7 @@ app.post("/calc", (req, res) =>
                 res.statusCode = 400;
         }
     }
-    res.json({result:result});
+    res.send({headers: headers, result: result});
 });
 
 var server = app.listen(8000, function () 
